@@ -8,7 +8,7 @@ class LogMeInTest < ActiveSupport::TestCase
 	end
 
 	test "check_pass_success" do
-		assert_equal true, User.check_pass("login", "estaeumasenha")
+		assert_equal true, User.check_pass("login", "estaeumasenhaa")
 	end
 
 	test "check_pass_failure" do

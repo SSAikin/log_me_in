@@ -4,5 +4,5 @@ language: ruby
 cache: bundler
 rvm:
   - 2.1.2
-script: 'bundle exec rake spec'
+script: 'bundle exec rake test'
 before_install: gem install bundler -v 1.16.3
