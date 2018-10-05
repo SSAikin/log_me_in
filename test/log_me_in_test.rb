@@ -21,7 +21,7 @@ class LogMeInTest < ActiveSupport::TestCase
 	end
 
 	test "create_user_diff_hash" do
-		u = User.new(login: "my_name", password: "estaeumasenha")
+		u = User.new(login: "my_name", password: "estaeumasaenha")
 		u = u.define_password
 		assert_not_equal User.first.password, u.password
 	end
