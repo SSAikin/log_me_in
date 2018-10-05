@@ -19,5 +19,8 @@ Gem::Specification.new do |s|
     s.add_dependency "rails", "~> 3.2.22.5"
 
     s.add_development_dependency "sqlite3"
-    s.add_development_dependency 'coveralls'
+    s.add_development_dependency "pry"
+    s.add_development_dependency "pry-remote"
+    s.add_development_dependency "pry-nav"
+    s.add_development_dependency "coveralls"
 end

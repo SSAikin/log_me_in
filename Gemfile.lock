@@ -36,6 +36,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.3)
     builder (3.0.4)
+    coderay (1.1.2)
     concurrent-ruby (1.0.5)
     coveralls (0.8.22)
       json (>= 1.8, < 3)
@@ -56,9 +57,19 @@ GEM
     mail (2.5.5)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.2)
     mime-types (1.25.1)
     multi_json (1.13.1)
     polyglot (0.3.5)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
     rack (1.4.7)
     rack-cache (1.8.0)
       rack (>= 0.4)
@@ -89,6 +100,7 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
+    slop (3.6.0)
     sprockets (2.2.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -112,6 +124,9 @@ DEPENDENCIES
   coveralls
   jquery-rails
   log_me_in!
+  pry
+  pry-nav
+  pry-remote
   sqlite3
 
 BUNDLED WITH
