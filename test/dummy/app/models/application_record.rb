@@ -1,5 +1,6 @@
 class ApplicationRecord < ActiveRecord::Base
-	extend LogMeIn
+	include LogMeIn::CreateUser
+	extend LogMeIn::CheckPassword
  
 	self.abstract_class = true
 end

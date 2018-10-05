@@ -14,4 +14,15 @@ class LogMeInTest < ActiveSupport::TestCase
 	test "check_pass_failure" do
 		assert_equal false, User.check_pass("login", "estaeumasenhaa")
 	end
+
+	test "create_user" do
+		u = User.new(login: "my_name", password: "this")
+		assert_equal u, u.define_password
+	end
+
+	test "create_user_diff_hash" do
+		u = User.new(login: "my_name", password: "estaeumasenha")
+		u = u.define_password
+		assert_not_equal User.first.password, u.password
+	end
 end
