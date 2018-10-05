@@ -1,3 +1,5 @@
+require 'coveralls'
+Coveralls.wear!
 require 'test_helper'
 
 class LogMeInTest < ActiveSupport::TestCase
